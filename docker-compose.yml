@@ -1,0 +1,7 @@
+services:
+  api:
+    build: .
+    container_name: nyaa-api-server
+    ports:
+      - "8383:80"
+    restart: unless-stopped
