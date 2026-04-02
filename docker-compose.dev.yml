@@ -1,6 +1,6 @@
 services:
   api:
-    image: ghcr.io/khw315/nyaasi-api-python:latest
+    build: .
     container_name: nyaa-api-server
     ports:
       - "8383:80"

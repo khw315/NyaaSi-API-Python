@@ -118,7 +118,8 @@ def home__get():
         "message": "Welcome to the (Unofficial) Nyaa API",
         "version": "1.0.0",
         "docs": "/docs",
-        "license": "GPL-3.0 License"
+        "license": "GPL-3.0 License",
+        "github": "https://github.com/khw315/NyaaSi-API-Python"
     }
 
 @app.get("/nyaa", tags=["Search"], summary="Nyaa Category Search", operation_id="nyaa_category_search_nyaa_get")

@@ -19,12 +19,18 @@ Scrapes **https://nyaa.si/** and **https://sukebei.nyaa.si/** directly.
 ### Getting Started
 
 #### Docker (Recommended)
-The easiest way to get the API up and running is via Docker Compose.
+The simplest way to get the API up and running is by using the Docker image or Docker Compose.
 
+**Option A: Pull & Run directly**
+```bash
+docker run -d --name nyaa-api -p 8383:80 ghcr.io/khw315/nyaasi-api-python:latest:latest
+```
+
+**Option B: Docker Compose**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/Sukebei-API-Python.git
-   cd Sukebei-API-Python
+   git clone https://github.com/khw315/NyaaSi-API-Python.git
+   cd NyaaSi-API-Python
    ```
 2. **Start the service**:
    ```bash
