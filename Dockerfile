@@ -9,6 +9,10 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
+LABEL org.opencontainers.image.source=https://github.com/khw315/NyaaSi-API-Python
+LABEL org.opencontainers.image.licenses=GPL-3.0
+LABEL org.opencontainers.image.description="API for nyaa.si and sukebei.nyaa.si"
+
 # ── Install system deps required by lxml ──────────────────────
 RUN apt-get update && apt-get install -y --no-install-recommends \
         libxml2 \
