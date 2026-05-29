@@ -5,3 +5,11 @@ services:
     ports:
       - "8383:80"
     restart: unless-stopped
+    dns:
+      - 9.9.9.9
+      - 149.112.112.112
+      - 94.140.14.14
+      - 94.140.15.15
+    environment:
+      - DOH_ENABLED=true
+      - DOH_PROVIDER=quad9
