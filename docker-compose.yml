@@ -3,7 +3,7 @@ services:
     image: ghcr.io/khw315/nyaasi-api-python:latest
     container_name: nyaa-api-server
     ports:
-      - "8383:80"
+      - "8383:88"
     restart: unless-stopped
     dns:
       - 9.9.9.9
